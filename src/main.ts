@@ -54,7 +54,7 @@ async function bootstrap() {
   // SwaggerModule.setup('api/docs', app, document);
 
   const port = parseInt(process.env.API_PORT || '3001', 10);
-  await app.listen(port, '0.0.0.0');
+  await app.listen(port, '3000');
 
   console.log(`✅ SmartFlux Backend running at http://localhost:${port}`);
   console.log(`📚 API available at http://localhost:${port}/api`);
