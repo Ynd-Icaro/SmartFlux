@@ -1,7 +1,8 @@
 datasource db {
   provider  = "postgresql"
-  // Connection URLs were moved to runtime configuration (prisma.config.ts)
-  // Prisma 7+ no longer supports `url` or `directUrl` in schema files.
+  // Connection URLs are provided via environment variables for Prisma 5.x
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 generator client {
