@@ -40,7 +40,7 @@ __decorate([
 ], ServiceItemDto.prototype, "usedParts", void 0);
 class CreateServiceOrderDto {
     static _OPENAPI_METADATA_FACTORY() {
-        return { customerId: { required: true, type: () => String }, deviceInfo: { required: true, type: () => String }, problem: { required: true, type: () => String }, services: { required: true, type: async () => [require("./create-service-order.dto").ServiceItemDto] }, estimatedCost: { required: false, type: () => Number }, notes: { required: false, type: () => String } };
+        return { customerId: { required: true, type: () => String }, deviceInfo: { required: true, type: () => String }, problem: { required: true, type: () => String }, services: { required: true, type: () => [require("./create-service-order.dto").ServiceItemDto] }, estimatedCost: { required: false, type: () => Number }, notes: { required: false, type: () => String } };
     }
 }
 exports.CreateServiceOrderDto = CreateServiceOrderDto;

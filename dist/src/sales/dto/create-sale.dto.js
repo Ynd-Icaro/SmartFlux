@@ -42,7 +42,7 @@ __decorate([
 ], SaleItemDto.prototype, "taxRate", void 0);
 class CreateSaleDto {
     static _OPENAPI_METADATA_FACTORY() {
-        return { customerId: { required: true, type: () => String }, items: { required: true, type: async () => [require("./create-sale.dto").SaleItemDto] }, paymentMethod: { required: true, type: () => Object }, discount: { required: false, type: () => Number }, notes: { required: false, type: () => String }, receivableId: { required: false, type: () => String }, invoiceNumber: { required: false, type: () => String }, invoiceKey: { required: false, type: () => String } };
+        return { customerId: { required: true, type: () => String }, items: { required: true, type: () => [require("./create-sale.dto").SaleItemDto] }, paymentMethod: { required: true, type: () => Object }, discount: { required: false, type: () => Number }, notes: { required: false, type: () => String }, receivableId: { required: false, type: () => String }, invoiceNumber: { required: false, type: () => String }, invoiceKey: { required: false, type: () => String } };
     }
 }
 exports.CreateSaleDto = CreateSaleDto;

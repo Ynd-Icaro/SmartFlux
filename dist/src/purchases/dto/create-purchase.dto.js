@@ -49,7 +49,7 @@ __decorate([
 ], PurchaseItemDto.prototype, "notes", void 0);
 class CreatePurchaseDto {
     static _OPENAPI_METADATA_FACTORY() {
-        return { supplierId: { required: true, type: () => String }, items: { required: true, type: async () => [require("./create-purchase.dto").PurchaseItemDto] }, deliveryDate: { required: true, type: () => Date }, freight: { required: false, type: () => Number }, discount: { required: false, type: () => Number }, notes: { required: false, type: () => String }, invoiceNumber: { required: false, type: () => String } };
+        return { supplierId: { required: true, type: () => String }, items: { required: true, type: () => [require("./create-purchase.dto").PurchaseItemDto] }, deliveryDate: { required: true, type: () => Date }, freight: { required: false, type: () => Number }, discount: { required: false, type: () => Number }, notes: { required: false, type: () => String }, invoiceNumber: { required: false, type: () => String } };
     }
 }
 exports.CreatePurchaseDto = CreatePurchaseDto;
