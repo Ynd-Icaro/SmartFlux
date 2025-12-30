@@ -25,9 +25,11 @@ async function bootstrap() {
     }));
     app.setGlobalPrefix('api');
     const port = parseInt(process.env.API_PORT || '3001', 10);
-    await app.listen(port, '3000');
-    console.log(`✅ SmartFlux Backend running at http://localhost:${port}`);
-    console.log(`📚 API available at http://localhost:${port}/api`);
+    const host = process.env.API_HOST || '0.0.0.0';
+    await app.listen(port, host);
+    const publicHost = process.env.API_URL || `http://localhost:${port}`;
+    console.log(`✅ SmartFlux Backend running at ${publicHost}`);
+    console.log(`📚 API available at ${publicHost}/api`);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
